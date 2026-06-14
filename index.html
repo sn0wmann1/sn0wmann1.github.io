@@ -228,6 +228,40 @@
       color: var(--text);
     }
 
+    /* hobbies */
+    .hobbies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 0.75rem;
+    }
+    .hobby-card {
+      padding: 1.2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-align: center;
+      transition: all 0.15s;
+    }
+    .hobby-card:hover {
+      border-color: var(--accent);
+      background: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+    .hobby-card .h-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.4rem;
+    }
+    .hobby-card h3 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .hobby-card p {
+      font-size: 0.78rem;
+      color: var(--text-tertiary);
+    }
+
     /* blog card */
     .blog-card {
       background: linear-gradient(135deg, var(--surface), var(--surface-hover));
@@ -279,6 +313,18 @@
       color: var(--text-tertiary);
       font-size: 0.8rem;
     }
+    footer .f-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    footer .f-links a {
+      color: var(--text-tertiary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    footer .f-links a:hover { color: var(--accent); }
 
     @media (max-width: 600px) {
       .layout { padding: 0 1.2rem; }
@@ -304,8 +350,9 @@
       <h1 class="greeting">Hi, I'm <span>snow</span></h1>
       <div class="bio">
         <p>
-          I break things until they work. Linux setup, custom keyboard RGB, color pipelines.
-          Occasional <a href="/blog/">blog posts</a> about what I've learned.
+          IT graduate. Linux tinkerer, homelab enthusiast, keyboard modder.
+          I build things — dotfiles, color pipelines, custom RGB controllers.
+          Writing about it at <a href="/blog/">the blog</a>.
         </p>
       </div>
       <div class="social-links">
@@ -326,14 +373,7 @@
           </div>
           <span class="lang">QML / Shell</span>
         </a>
-        <a href="https://github.com/sn0wmann1/MAD-68-custom-animation" class="project-card">
-          <div class="icon" style="background: rgba(251, 146, 60, 0.15); color: var(--orange);">⌨</div>
-          <div class="info">
-            <h3>MAD-68 HE Controller</h3>
-            <p>custom RGB lighting for MAD68 HE keyboard, web dashboard</p>
-          </div>
-          <span class="lang">Python</span>
-        </a>
+
         <a href="https://github.com/sn0wmann1/matugen-sync" class="project-card">
           <div class="icon" style="background: rgba(74, 222, 128, 0.15); color: var(--green);">🎨</div>
           <div class="info">
@@ -381,6 +421,8 @@
             <li>Shell</li>
             <li>TypeScript</li>
             <li>Rust</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
           </ul>
         </div>
         <div class="skill-cat">
@@ -391,6 +433,8 @@
             <li>matugen</li>
             <li>OpenRGB</li>
             <li>systemd</li>
+            <li>neovim</li>
+            <li>fish</li>
           </ul>
         </div>
         <div class="skill-cat">
@@ -401,7 +445,35 @@
             <li>self-host</li>
             <li>GH Actions</li>
             <li>Tailscale</li>
+            <li>Nginx</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">hobbies</h2>
+      <p class="section-desc">what I do when not coding</p>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="h-icon">🐧</div>
+          <h3>Linux</h3>
+          <p>ricing, dotfiles, custom configs</p>
+        </div>
+        <div class="hobby-card">
+          <div class="h-icon">🖥</div>
+          <h3>Homelab</h3>
+          <p>self-hosting, servers, networking</p>
+        </div>
+        <div class="hobby-card">
+          <div class="h-icon">🎮</div>
+          <h3>Gaming</h3>
+          <p>custom RGB, keybinds, setups</p>
+        </div>
+        <div class="hobby-card">
+          <div class="h-icon">⌨</div>
+          <h3>Keyboards</h3>
+          <p>MAD68 HE, modding, firmware</p>
         </div>
       </div>
     </section>
@@ -416,8 +488,13 @@
     </section>
 
     <footer>
+      <div class="f-links">
+        <a href="/">home</a>
+        <a href="/blog/">blog</a>
+        <a href="https://github.com/sn0wmann1">github</a>
+      </div>
       <p>snow · 2026</p>
-      <p style="margin-top: 0.3rem;">MIT — use freely, change freely</p>
+      <p style="margin-top: 0.3rem; color: var(--text-tertiary);">MIT — use freely, change freely</p>
     </footer>
   </div>
 
