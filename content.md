@@ -18,12 +18,11 @@ social:
 - [matugen-sync](https://github.com/sn0wmann1/matugen-sync) — color sync — Shell
 - [ClapFinder](https://github.com/sn0wmann1/ClapFinder) — detect claps — Python
 - [archinstall-personal](https://github.com/sn0wmann1/archinstall-personal) — Arch install — Shell
-- [linux-rpc](https://github.com/sn0wmann1/linux-discord-rich-presence) — Discord RPC — Rust
 
 ## skills
 
 ### development
-Python, QML, Shell, TypeScript, Rust, HTML/CSS, JavaScript
+Python, QML, Shell, TypeScript, HTML/CSS, JavaScript
 
 ### config
 Hyprland, Caelestia, matugen, OpenRGB, systemd, neovim, fish
