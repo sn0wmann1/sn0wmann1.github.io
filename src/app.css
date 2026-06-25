@@ -1,12 +1,1 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; }
-body {
-  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-  background: #0a0a0f;
-  color: #d4d4d8;
-  font-size: 14px;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-#app { height: 100%; }
-::selection { background: #2563eb33; color: #d4d4d8; }
+/* styles are in App.svelte :global() */
